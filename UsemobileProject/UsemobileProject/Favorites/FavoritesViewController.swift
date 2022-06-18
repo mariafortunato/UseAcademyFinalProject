@@ -10,11 +10,17 @@ import UIKit
 class FavoritesViewController: UIViewController {
     
 
-    @IBOutlet weak var favoritesTableView: UITableView?
+    @IBOutlet weak var favoritesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    private func configuraTableView() {
+        favoritesTableView.dataSource = self
+        favoritesTableView.delegate = self
+        favoritesTableView.showsVerticalScrollIndicator = false // a barra lateral
+//        favoritesTableView.register(UINib(nibName: "FavoritosTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoritosTableViewCell")
     }
 
 }
