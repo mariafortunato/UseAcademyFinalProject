@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083144D5285D660E00BC415B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083144D3285D660E00BC415B /* HomeViewController.swift */; };
+		083144D6285D660E00BC415B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083144D4285D660E00BC415B /* HomeViewController.xib */; };
 		4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B5285D61920072AA6C /* AppDelegate.swift */; };
 		4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B7285D61920072AA6C /* SceneDelegate.swift */; };
 		4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B9285D61920072AA6C /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		083144D3285D660E00BC415B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		083144D4285D660E00BC415B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4CBC37B2285D61920072AA6C /* UsemobileProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsemobileProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBC37B5285D61920072AA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBC37B7285D61920072AA6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083144D2285D65F400BC415B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				083144D3285D660E00BC415B /* HomeViewController.swift */,
+				083144D4285D660E00BC415B /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		4CBC37A9285D61920072AA6C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		4CBC37B4285D61920072AA6C /* UsemobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				083144D2285D65F400BC415B /* Home */,
 				4CBC37B5285D61920072AA6C /* AppDelegate.swift */,
 				4CBC37B7285D61920072AA6C /* SceneDelegate.swift */,
 				4CBC37B9285D61920072AA6C /* ViewController.swift */,
@@ -128,6 +142,7 @@
 				4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */,
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
 				4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */,
+				083144D6285D660E00BC415B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */,
 				4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */,
 				4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */,
+				083144D5285D660E00BC415B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
