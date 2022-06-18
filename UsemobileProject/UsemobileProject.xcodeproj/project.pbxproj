@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		083144D5285D660E00BC415B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083144D3285D660E00BC415B /* HomeViewController.swift */; };
 		083144D6285D660E00BC415B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083144D4285D660E00BC415B /* HomeViewController.xib */; };
+		083144DA285D690900BC415B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083144D8285D690800BC415B /* DetailsViewController.swift */; };
+		083144DB285D690900BC415B /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083144D9285D690800BC415B /* DetailsViewController.xib */; };
 		4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B5285D61920072AA6C /* AppDelegate.swift */; };
 		4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B7285D61920072AA6C /* SceneDelegate.swift */; };
 		4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B9285D61920072AA6C /* ViewController.swift */; };
@@ -17,11 +19,17 @@
 		4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */; };
 		9AED6A9E285D690500A2C0BF /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED6A9C285D690500A2C0BF /* AddNewViewController.swift */; };
 		9AED6A9F285D690500A2C0BF /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED6A9D285D690500A2C0BF /* AddNewViewController.xib */; };
+
+		4CBC37CD285D68010072AA6C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37CB285D68010072AA6C /* FavoritesViewController.swift */; };
+		4CBC37CE285D68010072AA6C /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37CC285D68010072AA6C /* FavoritesViewController.xib */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		083144D3285D660E00BC415B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		083144D4285D660E00BC415B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		083144D8285D690800BC415B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		083144D9285D690800BC415B /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		4CBC37B2285D61920072AA6C /* UsemobileProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsemobileProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBC37B5285D61920072AA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBC37B7285D61920072AA6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,8 +38,12 @@
 		4CBC37BE285D61930072AA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBC37C1285D61930072AA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBC37C3285D61930072AA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 		9AED6A9C285D690500A2C0BF /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		9AED6A9D285D690500A2C0BF /* AddNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
+		4CBC37CB285D68010072AA6C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		4CBC37CC285D68010072AA6C /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		083144D7285D68F500BC415B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				083144D8285D690800BC415B /* DetailsViewController.swift */,
+				083144D9285D690800BC415B /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		4CBC37A9285D61920072AA6C = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +94,12 @@
 		4CBC37B4285D61920072AA6C /* UsemobileProject */ = {
 			isa = PBXGroup;
 			children = (
+
 				9AED6A9B285D68ED00A2C0BF /* AddNew */,
+
+				083144D7285D68F500BC415B /* Details */,
+				4CBC37CA285D67E00072AA6C /* Favorites */,
+
 				083144D2285D65F400BC415B /* Home */,
 				4CBC37B5285D61920072AA6C /* AppDelegate.swift */,
 				4CBC37B7285D61920072AA6C /* SceneDelegate.swift */,
@@ -86,6 +112,7 @@
 			path = UsemobileProject;
 			sourceTree = "<group>";
 		};
+
 		9AED6A9B285D68ED00A2C0BF /* AddNew */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +120,15 @@
 				9AED6A9D285D690500A2C0BF /* AddNewViewController.xib */,
 			);
 			path = AddNew;
+
+		4CBC37CA285D67E00072AA6C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC37CB285D68010072AA6C /* FavoritesViewController.swift */,
+				4CBC37CC285D68010072AA6C /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +192,9 @@
 				9AED6A9F285D690500A2C0BF /* AddNewViewController.xib in Resources */,
 				4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */,
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
+				083144DB285D690900BC415B /* DetailsViewController.xib in Resources */,
 				4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */,
+				4CBC37CE285D68010072AA6C /* FavoritesViewController.xib in Resources */,
 				083144D6285D660E00BC415B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +210,9 @@
 				4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */,
 				4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */,
 				4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */,
+				4CBC37CD285D68010072AA6C /* FavoritesViewController.swift in Sources */,
 				083144D5285D660E00BC415B /* HomeViewController.swift in Sources */,
+				083144DA285D690900BC415B /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
