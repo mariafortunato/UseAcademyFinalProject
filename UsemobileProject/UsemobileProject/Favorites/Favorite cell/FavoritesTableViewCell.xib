@@ -20,8 +20,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tqk-IC-U7e">
                         <rect key="frame" x="16" y="8" width="343" height="65"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FkS-sW-6kt">
-                                <rect key="frame" x="0.0" y="-1" width="65" height="66"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arara" translatesAutoresizingMaskIntoConstraints="NO" id="FkS-sW-6kt">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="JXX-WM-PMB"/>
                                     <constraint firstAttribute="height" constant="65" id="ZCU-dv-UC4"/>
@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="width" constant="24" id="bXe-oq-WVo"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                <state key="normal" image="Vector"/>
                             </button>
                         </subviews>
                         <constraints>
@@ -83,6 +83,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="Vector" width="23" height="22"/>
+        <image name="arara" width="830" height="500"/>
     </resources>
 </document>
