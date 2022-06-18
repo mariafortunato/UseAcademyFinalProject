@@ -18,6 +18,8 @@
 		4CBC37DF285D75EB0072AA6C /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37DD285D75EB0072AA6C /* DetailsViewController.xib */; };
 		4CBC37E2285D76000072AA6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37E0285D76000072AA6C /* HomeViewController.swift */; };
 		4CBC37E3285D76000072AA6C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37E1285D76000072AA6C /* HomeViewController.xib */; };
+		4CF2AC01285E54E50004D3FF /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2ABFF285E54E50004D3FF /* FavoritesTableViewCell.swift */; };
+		4CF2AC02285E54E50004D3FF /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2AC00285E54E50004D3FF /* FavoritesTableViewCell.xib */; };
 		4CFB29B5285E227B004E69FB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB29B3285E227B004E69FB /* TabBarViewController.swift */; };
 		4CFB29B6285E227B004E69FB /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB29B4285E227B004E69FB /* TabBarViewController.xib */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		4CBC37DD285D75EB0072AA6C /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		4CBC37E0285D76000072AA6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4CBC37E1285D76000072AA6C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4CF2ABFF285E54E50004D3FF /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		4CF2AC00285E54E50004D3FF /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
 		4CFB29B3285E227B004E69FB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4CFB29B4285E227B004E69FB /* TabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,7 @@
 		4CBC37D2285D75A50072AA6C /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				4CF2ABFE285E54D10004D3FF /* Favorite cell */,
 				4CBC37D8285D75D70072AA6C /* FavoritesViewController.swift */,
 				4CBC37D9285D75D70072AA6C /* FavoritesViewController.xib */,
 			);
@@ -117,6 +122,15 @@
 				4CBC37D5285D75C10072AA6C /* AddNewViewController.xib */,
 			);
 			path = AddNew;
+			sourceTree = "<group>";
+		};
+		4CF2ABFE285E54D10004D3FF /* Favorite cell */ = {
+			isa = PBXGroup;
+			children = (
+				4CF2ABFF285E54E50004D3FF /* FavoritesTableViewCell.swift */,
+				4CF2AC00285E54E50004D3FF /* FavoritesTableViewCell.xib */,
+			);
+			path = "Favorite cell";
 			sourceTree = "<group>";
 		};
 		4CFB29B2285E225D004E69FB /* TabBar */ = {
@@ -187,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */,
+				4CF2AC02285E54E50004D3FF /* FavoritesTableViewCell.xib in Resources */,
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
 				4CBC37DB285D75D70072AA6C /* FavoritesViewController.xib in Resources */,
 				4CBC37D7285D75C10072AA6C /* AddNewViewController.xib in Resources */,
@@ -209,6 +224,7 @@
 				4CBC37E2285D76000072AA6C /* HomeViewController.swift in Sources */,
 				4CFB29B5285E227B004E69FB /* TabBarViewController.swift in Sources */,
 				4CBC37DE285D75EB0072AA6C /* DetailsViewController.swift in Sources */,
+				4CF2AC01285E54E50004D3FF /* FavoritesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
