@@ -15,6 +15,8 @@
 		4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BB285D61920072AA6C /* Main.storyboard */; };
 		4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BE285D61930072AA6C /* Assets.xcassets */; };
 		4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */; };
+		9AED6A9E285D690500A2C0BF /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED6A9C285D690500A2C0BF /* AddNewViewController.swift */; };
+		9AED6A9F285D690500A2C0BF /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED6A9D285D690500A2C0BF /* AddNewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4CBC37BE285D61930072AA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBC37C1285D61930072AA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBC37C3285D61930072AA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AED6A9C285D690500A2C0BF /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		9AED6A9D285D690500A2C0BF /* AddNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		4CBC37B4285D61920072AA6C /* UsemobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				9AED6A9B285D68ED00A2C0BF /* AddNew */,
 				083144D2285D65F400BC415B /* Home */,
 				4CBC37B5285D61920072AA6C /* AppDelegate.swift */,
 				4CBC37B7285D61920072AA6C /* SceneDelegate.swift */,
@@ -79,6 +84,15 @@
 				4CBC37C3285D61930072AA6C /* Info.plist */,
 			);
 			path = UsemobileProject;
+			sourceTree = "<group>";
+		};
+		9AED6A9B285D68ED00A2C0BF /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				9AED6A9C285D690500A2C0BF /* AddNewViewController.swift */,
+				9AED6A9D285D690500A2C0BF /* AddNewViewController.xib */,
+			);
+			path = AddNew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AED6A9F285D690500A2C0BF /* AddNewViewController.xib in Resources */,
 				4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */,
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
 				4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */,
@@ -153,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AED6A9E285D690500A2C0BF /* AddNewViewController.swift in Sources */,
 				4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */,
 				4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */,
 				4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */,
