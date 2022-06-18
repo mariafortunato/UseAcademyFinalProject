@@ -34,11 +34,6 @@ class AddNewViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-        
-    }
 
     // MARK: Setups
     private func setupUI() {
