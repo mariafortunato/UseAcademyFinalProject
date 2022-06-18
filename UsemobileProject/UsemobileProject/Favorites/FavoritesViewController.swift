@@ -43,5 +43,7 @@ extension FavoritesViewController: UITableViewDataSource {
 }
 
 extension FavoritesViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("testando Git")
+    }
 }
