@@ -9,38 +9,43 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
     
+    private let favoritesTableViewCell = "FavoritesTableViewCell"
 
-    @IBOutlet weak var favoritesTableView: UITableView!
+    @IBOutlet weak var favoriteTableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configuraTableView()
     }
+    
     private func configuraTableView() {
-        favoritesTableView.dataSource = self
-        favoritesTableView.delegate = self
-        favoritesTableView.showsVerticalScrollIndicator = false // a barra lateral
-//        favoritesTableView.register(UINib(nibName: "FavoritosTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoritosTableViewCell")
+        favoriteTableView?.dataSource = self
+        favoriteTableView?.delegate = self
+        favoriteTableView?.showsVerticalScrollIndicator = false // a barra lateral
+        favoriteTableView?.register(UINib(nibName: favoritesTableViewCell, bundle: nil), forCellReuseIdentifier: favoritesTableViewCell)
     }
 
 }
 
-extension FavoritesViewController: UITableViewDataSource {
+extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: favoritesTableViewCell, for: indexPath)
+        
+        cell.textLabel?.text = ""
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("testando Git")
     }
     
     
 }
 
-extension FavoritesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("testando Git")
-    }
-}
