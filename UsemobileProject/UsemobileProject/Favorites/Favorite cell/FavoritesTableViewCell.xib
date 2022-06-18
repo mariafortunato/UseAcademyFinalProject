@@ -52,6 +52,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Vector"/>
+                                <connections>
+                                    <action selector="starButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Dsq-Xu-SZI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -77,6 +80,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="animalImage" destination="FkS-sW-6kt" id="cb2-se-oG9"/>
+                <outlet property="descriptionLabel" destination="vtH-bP-Xlm" id="x20-NX-l4T"/>
+                <outlet property="starButtonOutlet" destination="lBI-X1-WNz" id="VNW-V1-AT5"/>
                 <outlet property="titleLabel" destination="5Yg-Gc-qZu" id="I9c-hW-ga9"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="63.950892857142854"/>
