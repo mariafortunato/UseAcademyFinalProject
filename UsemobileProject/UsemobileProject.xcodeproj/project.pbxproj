@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		083144D5285D660E00BC415B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083144D3285D660E00BC415B /* HomeViewController.swift */; };
 		083144D6285D660E00BC415B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083144D4285D660E00BC415B /* HomeViewController.xib */; };
+		083144DA285D690900BC415B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083144D8285D690800BC415B /* DetailsViewController.swift */; };
+		083144DB285D690900BC415B /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083144D9285D690800BC415B /* DetailsViewController.xib */; };
 		4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B5285D61920072AA6C /* AppDelegate.swift */; };
 		4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B7285D61920072AA6C /* SceneDelegate.swift */; };
 		4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B9285D61920072AA6C /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		083144D3285D660E00BC415B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		083144D4285D660E00BC415B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		083144D8285D690800BC415B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		083144D9285D690800BC415B /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		4CBC37B2285D61920072AA6C /* UsemobileProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsemobileProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBC37B5285D61920072AA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBC37B7285D61920072AA6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		083144D7285D68F500BC415B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				083144D8285D690800BC415B /* DetailsViewController.swift */,
+				083144D9285D690800BC415B /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		4CBC37A9285D61920072AA6C = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 		4CBC37B4285D61920072AA6C /* UsemobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				083144D7285D68F500BC415B /* Details */,
 				4CBC37CA285D67E00072AA6C /* Favorites */,
 				083144D2285D65F400BC415B /* Home */,
 				4CBC37B5285D61920072AA6C /* AppDelegate.swift */,
@@ -155,6 +169,7 @@
 			files = (
 				4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */,
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
+				083144DB285D690900BC415B /* DetailsViewController.xib in Resources */,
 				4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */,
 				4CBC37CE285D68010072AA6C /* FavoritesViewController.xib in Resources */,
 				083144D6285D660E00BC415B /* HomeViewController.xib in Resources */,
@@ -173,6 +188,7 @@
 				4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */,
 				4CBC37CD285D68010072AA6C /* FavoritesViewController.swift in Sources */,
 				083144D5285D660E00BC415B /* HomeViewController.swift in Sources */,
+				083144DA285D690900BC415B /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
