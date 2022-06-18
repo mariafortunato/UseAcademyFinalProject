@@ -17,6 +17,8 @@
 		4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BB285D61920072AA6C /* Main.storyboard */; };
 		4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BE285D61930072AA6C /* Assets.xcassets */; };
 		4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */; };
+		4CBC37CD285D68010072AA6C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37CB285D68010072AA6C /* FavoritesViewController.swift */; };
+		4CBC37CE285D68010072AA6C /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37CC285D68010072AA6C /* FavoritesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4CBC37BE285D61930072AA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBC37C1285D61930072AA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBC37C3285D61930072AA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBC37CB285D68010072AA6C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		4CBC37CC285D68010072AA6C /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				083144D7285D68F500BC415B /* Details */,
+				4CBC37CA285D67E00072AA6C /* Favorites */,
 				083144D2285D65F400BC415B /* Home */,
 				4CBC37B5285D61920072AA6C /* AppDelegate.swift */,
 				4CBC37B7285D61920072AA6C /* SceneDelegate.swift */,
@@ -93,6 +98,15 @@
 				4CBC37C3285D61930072AA6C /* Info.plist */,
 			);
 			path = UsemobileProject;
+			sourceTree = "<group>";
+		};
+		4CBC37CA285D67E00072AA6C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC37CB285D68010072AA6C /* FavoritesViewController.swift */,
+				4CBC37CC285D68010072AA6C /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +171,7 @@
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
 				083144DB285D690900BC415B /* DetailsViewController.xib in Resources */,
 				4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */,
+				4CBC37CE285D68010072AA6C /* FavoritesViewController.xib in Resources */,
 				083144D6285D660E00BC415B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +186,7 @@
 				4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */,
 				4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */,
 				4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */,
+				4CBC37CD285D68010072AA6C /* FavoritesViewController.swift in Sources */,
 				083144D5285D660E00BC415B /* HomeViewController.swift in Sources */,
 				083144DA285D690900BC415B /* DetailsViewController.swift in Sources */,
 			);
