@@ -13,6 +13,14 @@
 		4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BB285D61920072AA6C /* Main.storyboard */; };
 		4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BE285D61930072AA6C /* Assets.xcassets */; };
 		4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */; };
+		4CBC37D6285D75C10072AA6C /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37D4285D75C10072AA6C /* AddNewViewController.swift */; };
+		4CBC37D7285D75C10072AA6C /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37D5285D75C10072AA6C /* AddNewViewController.xib */; };
+		4CBC37DA285D75D70072AA6C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37D8285D75D70072AA6C /* FavoritesViewController.swift */; };
+		4CBC37DB285D75D70072AA6C /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37D9285D75D70072AA6C /* FavoritesViewController.xib */; };
+		4CBC37DE285D75EB0072AA6C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37DC285D75EB0072AA6C /* DetailsViewController.swift */; };
+		4CBC37DF285D75EB0072AA6C /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37DD285D75EB0072AA6C /* DetailsViewController.xib */; };
+		4CBC37E2285D76000072AA6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37E0285D76000072AA6C /* HomeViewController.swift */; };
+		4CBC37E3285D76000072AA6C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37E1285D76000072AA6C /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		4CBC37BE285D61930072AA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBC37C1285D61930072AA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBC37C3285D61930072AA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBC37D4285D75C10072AA6C /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		4CBC37D5285D75C10072AA6C /* AddNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
+		4CBC37D8285D75D70072AA6C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		4CBC37D9285D75D70072AA6C /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		4CBC37DC285D75EB0072AA6C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4CBC37DD285D75EB0072AA6C /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		4CBC37E0285D76000072AA6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4CBC37E1285D76000072AA6C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,10 @@
 		4CBC37B4285D61920072AA6C /* UsemobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				4CBC37D3285D75A70072AA6C /* AddNew */,
+				4CBC37D2285D75A50072AA6C /* Favorites */,
+				4CBC37D1285D75A30072AA6C /* Details */,
+				4CBC37D0285D759B0072AA6C /* Home */,
 				4CBC37B5285D61920072AA6C /* AppDelegate.swift */,
 				4CBC37B7285D61920072AA6C /* SceneDelegate.swift */,
 				4CBC37B9285D61920072AA6C /* ViewController.swift */,
@@ -65,6 +85,42 @@
 				4CBC37C3285D61930072AA6C /* Info.plist */,
 			);
 			path = UsemobileProject;
+			sourceTree = "<group>";
+		};
+		4CBC37D0285D759B0072AA6C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC37E0285D76000072AA6C /* HomeViewController.swift */,
+				4CBC37E1285D76000072AA6C /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4CBC37D1285D75A30072AA6C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC37DC285D75EB0072AA6C /* DetailsViewController.swift */,
+				4CBC37DD285D75EB0072AA6C /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		4CBC37D2285D75A50072AA6C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC37D8285D75D70072AA6C /* FavoritesViewController.swift */,
+				4CBC37D9285D75D70072AA6C /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		4CBC37D3285D75A70072AA6C /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC37D4285D75C10072AA6C /* AddNewViewController.swift */,
+				4CBC37D5285D75C10072AA6C /* AddNewViewController.xib */,
+			);
+			path = AddNew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +184,10 @@
 				4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */,
 				4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */,
 				4CBC37BD285D61920072AA6C /* Main.storyboard in Resources */,
+				4CBC37DB285D75D70072AA6C /* FavoritesViewController.xib in Resources */,
+				4CBC37D7285D75C10072AA6C /* AddNewViewController.xib in Resources */,
+				4CBC37E3285D76000072AA6C /* HomeViewController.xib in Resources */,
+				4CBC37DF285D75EB0072AA6C /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +201,10 @@
 				4CBC37BA285D61920072AA6C /* ViewController.swift in Sources */,
 				4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */,
 				4CBC37B8285D61920072AA6C /* SceneDelegate.swift in Sources */,
+				4CBC37DA285D75D70072AA6C /* FavoritesViewController.swift in Sources */,
+				4CBC37D6285D75C10072AA6C /* AddNewViewController.swift in Sources */,
+				4CBC37E2285D76000072AA6C /* HomeViewController.swift in Sources */,
+				4CBC37DE285D75EB0072AA6C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
