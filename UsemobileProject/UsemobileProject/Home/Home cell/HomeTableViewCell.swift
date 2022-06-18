@@ -9,8 +9,15 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var animaisImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        preencherCell()
+        setupUI()
         
     }
     
@@ -19,5 +26,32 @@ class HomeTableViewCell: UITableViewCell {
 
        
     }
+    
+    
+    @IBAction func favoriteButton(_ sender: Any) {
+        
+        buttonStarColor()
+    }
+    
+    private func buttonStarColor() {
+
+        guard let imageNoColor: UIImage = UIImage(named: "Vector") else { return }
+        
+        favoriteButton.setImage(imageNoColor, for: .normal)
+        
+        print("favoritado!")
+    }
+    
+   
+    private func setupUI() {
+        
+        animaisImage.layer.cornerRadius = 8
+    }
+    
+    
+    private func preencherCell(){
+
+
+}
     
 }
