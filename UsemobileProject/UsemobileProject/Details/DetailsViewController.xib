@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,45 +21,6 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-zO-qZX">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="LMx-Rj-J4f">
-                            <rect key="frame" x="20" y="8" width="375" height="802"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6aa-pB-Gu7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="703.5"/>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="469-nP-ws4">
-                                    <rect key="frame" x="0.0" y="703.5" width="375" height="29"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGd-5c-FVH">
-                                    <rect key="frame" x="0.0" y="732.5" width="375" height="26.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HBjjkdncv ojadsjasjbvjb jkdjkafdsnfslfkldsnfksfs djhfosdnfksd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-ui-97E">
-                                    <rect key="frame" x="0.0" y="759" width="375" height="43"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="375" id="DQh-aJ-wcy"/>
-                            </constraints>
-                        </stackView>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="LMx-Rj-J4f" firstAttribute="bottom" secondItem="0h9-zO-qZX" secondAttribute="bottomMargin" id="5h6-Ih-kYz"/>
-                        <constraint firstItem="LMx-Rj-J4f" firstAttribute="top" secondItem="0h9-zO-qZX" secondAttribute="top" constant="8" id="BIb-ie-FOS"/>
-                        <constraint firstItem="LMx-Rj-J4f" firstAttribute="leading" secondItem="0h9-zO-qZX" secondAttribute="leading" constant="20" id="Cba-Im-i5h"/>
-                        <constraint firstAttribute="trailing" secondItem="LMx-Rj-J4f" secondAttribute="trailing" constant="19" id="Waq-Nu-jdv"/>
-                        <constraint firstItem="LMx-Rj-J4f" firstAttribute="centerY" secondItem="0h9-zO-qZX" secondAttribute="centerY" id="uW7-0Z-Zpk"/>
-                        <constraint firstItem="LMx-Rj-J4f" firstAttribute="top" secondItem="0h9-zO-qZX" secondAttribute="top" constant="8" id="x2M-Lt-Icf"/>
-                    </constraints>
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -72,6 +33,14 @@
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
         </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aZt-fh-8Pf">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="36.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-199" y="-275"/>
+        </label>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
