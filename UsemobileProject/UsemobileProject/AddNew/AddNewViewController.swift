@@ -30,10 +30,15 @@ class AddNewViewController: UIViewController {
     @IBOutlet weak var buttonAdd: UIButton!
     
     // MARK: Overrides
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            view.endEditing(true)
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
+
 
     // MARK: Setups
     private func setupUI() {
