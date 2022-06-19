@@ -18,7 +18,6 @@ struct AddNewSpecies : Decodable {
 class AddNewViewController: UIViewController {
     
     var addNewSpecies: AddNewSpecies?
-
     
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldLink: UITextField!
