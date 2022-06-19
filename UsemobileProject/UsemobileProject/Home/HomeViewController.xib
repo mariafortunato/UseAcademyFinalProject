@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="UsemobileProject" customModuleProvider="target">
             <connections>
-                <outlet property="HometableView" destination="SuW-wV-Hnf" id="MPz-tP-8C1"/>
+                <outlet property="homeTableView" destination="SuW-wV-Hnf" id="LeA-pm-Dsn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
