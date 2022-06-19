@@ -9,6 +9,11 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var animalImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -18,6 +23,9 @@ class HomeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
        
+    }
+    
+    @IBAction func favoriteButton(_ sender: Any) {
     }
     
 }
