@@ -18,7 +18,7 @@ struct AddNewSpecies : Decodable {
 class AddNewViewController: UIViewController {
     
     var addNewSpecies: AddNewSpecies?
-
+    
     
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldLink: UITextField!
@@ -31,15 +31,15 @@ class AddNewViewController: UIViewController {
     
     // MARK: Overrides
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-            view.endEditing(true)
-        }
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
-
-
+    
+    
     // MARK: Setups
     private func setupUI() {
         view.backgroundColor = .white
@@ -69,7 +69,7 @@ class AddNewViewController: UIViewController {
     }
     
     @IBAction func buttonAdd(_ sender: Any) {
-      getAnimals()
+        getAnimals()
         postAnimals(name: "testinho", image: "testinho", description: "testinho", species: "testinho", age: "testinho")
     }
     
@@ -116,5 +116,7 @@ class AddNewViewController: UIViewController {
             
         }.resume()
     }
+    
+    // teste
     
 }
