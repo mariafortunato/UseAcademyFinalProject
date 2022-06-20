@@ -25,54 +25,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="T6a-Rb-t6y">
-                    <rect key="frame" x="0.0" y="61" width="414" height="44"/>
-                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <textAttributes key="titleTextAttributes">
-                        <color key="textColor" red="0.08235294118" green="0.5450980392" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </textAttributes>
-                    <textAttributes key="largeTitleTextAttributes">
-                        <color key="textColor" red="0.08235294118" green="0.5450980392" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </textAttributes>
-                    <items>
-                        <navigationItem title="Cadastrar" id="HHJ-9s-H6I"/>
-                    </items>
-                </navigationBar>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FF1-a7-Goi">
-                    <rect key="frame" x="0.0" y="105" width="425" height="739"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="contentLayoutGuide" id="EW1-Wo-mKg"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="nJh-rb-Jwm"/>
-                </scrollView>
                 <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Reh-yT-spM">
-                    <rect key="frame" x="36" y="135" width="342" height="34"/>
+                    <rect key="frame" x="36" y="99" width="342" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Link da Imagem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qX9-PB-kes">
-                    <rect key="frame" x="36" y="199" width="342" height="34"/>
+                    <rect key="frame" x="36" y="163" width="342" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Espécie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-Dh-qiX">
-                    <rect key="frame" x="36" y="327" width="342" height="34"/>
+                    <rect key="frame" x="36" y="291" width="342" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Idade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Axa-Oe-b67">
-                    <rect key="frame" x="36" y="391" width="342" height="34"/>
+                    <rect key="frame" x="36" y="355" width="342" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxT-yG-A1q">
-                    <rect key="frame" x="36" y="455" width="342" height="31"/>
+                    <rect key="frame" x="36" y="419" width="342" height="31"/>
                     <color key="backgroundColor" red="0.45098039220000002" green="0.19215686269999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" red="0.85094326149999999" green="0.85393427929999999" blue="0.86290733259999997" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Cadastrar"/>
+                    <connections>
+                        <action selector="buttonAdd:" destination="-1" eventType="touchUpInside" id="QB1-Hn-dua"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descrição" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-xK-1Aq">
-                    <rect key="frame" x="36" y="263" width="342" height="34"/>
+                    <rect key="frame" x="36" y="227" width="342" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -86,17 +70,14 @@
                 <constraint firstItem="qX9-PB-kes" firstAttribute="top" secondItem="Reh-yT-spM" secondAttribute="bottom" constant="30" id="6Ku-vH-chM"/>
                 <constraint firstItem="Axa-Oe-b67" firstAttribute="top" secondItem="5bd-Dh-qiX" secondAttribute="bottom" constant="30" id="7WA-fQ-Hez"/>
                 <constraint firstItem="Axa-Oe-b67" firstAttribute="centerX" secondItem="hxT-yG-A1q" secondAttribute="centerX" id="7aJ-5l-w1S"/>
-                <constraint firstItem="T6a-Rb-t6y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="BTv-v3-Y7G"/>
                 <constraint firstItem="Reh-yT-spM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="KtE-6Z-0nn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d3b-xK-1Aq" secondAttribute="trailing" constant="36" id="MAm-nj-TQz"/>
                 <constraint firstItem="qX9-PB-kes" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="MwA-XM-wEv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5bd-Dh-qiX" secondAttribute="trailing" constant="36" id="TaN-nD-8oG"/>
-                <constraint firstItem="Reh-yT-spM" firstAttribute="top" secondItem="T6a-Rb-t6y" secondAttribute="bottom" constant="30" id="adh-K8-F5v"/>
+                <constraint firstItem="Reh-yT-spM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="55" id="XzT-wq-iq2"/>
                 <constraint firstItem="5bd-Dh-qiX" firstAttribute="top" secondItem="d3b-xK-1Aq" secondAttribute="bottom" constant="30" id="dIU-9F-uAB"/>
-                <constraint firstItem="T6a-Rb-t6y" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dRy-AV-C6C"/>
                 <constraint firstItem="5bd-Dh-qiX" firstAttribute="top" secondItem="d3b-xK-1Aq" secondAttribute="bottom" constant="30" id="eLW-Ej-L2b"/>
                 <constraint firstItem="Axa-Oe-b67" firstAttribute="leading" secondItem="5bd-Dh-qiX" secondAttribute="leading" id="eaY-kc-YeM"/>
-                <constraint firstItem="T6a-Rb-t6y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lwe-xJ-ucd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Reh-yT-spM" secondAttribute="trailing" constant="36" id="nZq-dY-Uuj"/>
                 <constraint firstItem="hxT-yG-A1q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="ong-S7-1VY"/>
                 <constraint firstItem="qX9-PB-kes" firstAttribute="top" secondItem="Reh-yT-spM" secondAttribute="bottom" constant="30" id="pWp-4i-coO"/>
