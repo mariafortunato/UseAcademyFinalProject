@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
+    
 
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -16,7 +17,6 @@ class HomeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupUI()
         
     }
     
@@ -40,16 +40,14 @@ class HomeTableViewCell: UITableViewCell {
     }
     
    
-    private func setupUI() {
+    func setupUI(items: Items) {
         
         animalImage.layer.cornerRadius = 8
+        nameLabel.text = items.name
+//        animalImage.image= items.image
+        descriptionLabel.text = items.description
     }
     
-    
-    private func preencherCell(){
-
-
-}
     
     
 }
