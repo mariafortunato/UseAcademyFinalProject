@@ -68,4 +68,53 @@ class AddNewViewController: UIViewController {
         buttonAdd.layer.cornerRadius = 8.0
     }
     
+    @IBAction func buttonAdd(_ sender: Any) {
+      getAnimals()
+        postAnimals(name: "testinho", image: "testinho", description: "testinho", species: "testinho", age: "testinho")
+    }
+    
+    private func getAnimals() {
+        
+        guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/animals") else { return }
+        let request = URLRequest(url: url)
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let response = response as? HTTPURLResponse {
+                print("Status Code: ", response.statusCode)
+            }
+            
+            
+            
+        }.resume()
+        
+    }
+    
+    private func postAnimals(name: String, image: String, description: String, species: String, age: String) {
+        
+        guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/animals") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        let body = ["name": name,
+                    "image": image,
+                    "description": description,
+                    "species": species,
+                    "age": age]
+        
+        let jsonBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        
+        request.httpBody = jsonBody
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let response = response as? HTTPURLResponse {
+                print("Status Code:", response.statusCode)
+            }
+            guard let data = data else { return }
+            let stringedData = String(data: data, encoding: .utf8)
+            print(stringedData)
+            
+        }.resume()
+    }
+    
 }
