@@ -29,9 +29,11 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = "Home"
         
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         
-        navigationController?.navigationBar.topItem?.title = ""
+        navigationItem.title = ""
+       
     }
     
 }
@@ -47,6 +49,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+//        let details = DetailsViewController(nameAnimal: animalsViewModel.animals?.items[indexPath.row]?.name ?? "", ageAnimal: animalsViewModel.animals?.items[indexPath.row]?.age ?? 0, descriptions: animalsViewModel.animals?.items[indexPath.row]?.description ?? "", specie: animalsViewModel.animals?.items[indexPath.row]?.species ?? "")
         
         let details = DetailsViewController()
         
