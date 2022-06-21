@@ -9,14 +9,27 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
     
+    var colorBlue: UIColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
+    
     private let favoritesTableViewCell = "FavoritesTableViewCell"
 
     @IBOutlet weak var favoriteTableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello")
+
         configuraTableView()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
+        navigationItem.title = "Favoritos"
+        navigationController?.navigationBar.tintColor = colorBlue
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: colorBlue]
+
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationItem.title = ""
     }
     
     private func configuraTableView() {
@@ -25,7 +38,6 @@ class FavoritesViewController: UIViewController {
         favoriteTableView?.showsVerticalScrollIndicator = false // a barra lateral
         favoriteTableView?.register(UINib(nibName: favoritesTableViewCell, bundle: nil), forCellReuseIdentifier: favoritesTableViewCell)
     }
-
 }
 
 extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
