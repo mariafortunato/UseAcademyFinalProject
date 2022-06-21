@@ -20,7 +20,6 @@ class AnimalsViewModel {
 
 
         guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/animals") else { return }
-
         let request = URLRequest(url: url)
 
         URLSession.shared.dataTask(with: request) { [self] data, response, error in
