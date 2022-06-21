@@ -37,7 +37,20 @@ class AddNewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupTextFields()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
+            navigationController?.navigationBar.topItem?.title = "Favoritos"
+
+        }
+        override func viewWillDisappear(_ animated: Bool) {
+
+            navigationController?.navigationBar.topItem?.title = ""
+        }
+    
     
     
     // MARK: Setups
@@ -70,12 +83,56 @@ class AddNewViewController: UIViewController {
     
     @IBAction func buttonAdd(_ sender: Any) {
         // getAnimals()
-        postAnimals(name: textFieldName.text!, image: textFieldLink.text!, description: textFieldDescription.text!, species: textFieldSpecies.text!, age: textFieldAge.text!)
+        postAnimals(name: textFieldName.text!, image: textFieldLink.text!, description: textFieldDescription.text!, species: textFieldSpecies.text!, age: Int(textFieldAge.text!) ?? 0)
     }
+    
+
+    func setupTextFields() {
+        disableAddButton()
+        
+        textFieldAge.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        textFieldLink.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        textFieldSpecies.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        textFieldName.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        textFieldDescription.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+
+        guard !textFieldName.text!.isEmpty else {
+            disableAddButton()
+            return
+        }
+        guard !textFieldAge.text!.isEmpty else {
+            disableAddButton()
+            return
+        }
+        guard !textFieldLink.text!.isEmpty else {
+            disableAddButton()
+            return
+        }
+        guard !textFieldSpecies.text!.isEmpty else {
+            disableAddButton()
+            return
+        }
+        guard !textFieldDescription.text!.isEmpty else {
+            disableAddButton()
+            return
+        }
+        
+        buttonAdd.backgroundColor = UIColor(red: 115/255, green: 49/255, blue: 249/255, alpha:1.0)
+        buttonAdd.isUserInteractionEnabled = true
+    }
+    
+    func disableAddButton() {
+        buttonAdd.isUserInteractionEnabled = false
+        buttonAdd.backgroundColor = UIColor.gray
+    }
+
     
     private func getAnimals() {
         
-        guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/animals") else { return }
+        guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/") else { return }
         let request = URLRequest(url: url)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -89,7 +146,7 @@ class AddNewViewController: UIViewController {
         
     }
     
-    private func postAnimals(name: String, image: String, description: String, species: String, age: String) {
+    private func postAnimals(name: String, image: String, description: String, species: String, age: Int) {
         
         guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/animals") else { return }
         
@@ -100,9 +157,10 @@ class AddNewViewController: UIViewController {
                     "image": image,
                     "description": description,
                     "species": species,
-                    "age": age]
+                    "age": age] as [String : Any]
         
         let jsonBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         request.httpBody = jsonBody
         
@@ -117,8 +175,7 @@ class AddNewViewController: UIViewController {
         }.resume()
     }
     
-    private func clearForm() {
-        
-    }
+    
+    
     
 }
