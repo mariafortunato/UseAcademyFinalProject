@@ -19,12 +19,6 @@ class FavoritesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         setupUI()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     @IBAction func starButtonAction(_ sender: Any) {
         
@@ -38,7 +32,10 @@ class FavoritesTableViewCell: UITableViewCell {
         starButtonOutlet.setImage(imageNoColor, for: .normal)
         
         print("Linha tirada de favoritos")
+        
     }
+    
+    
     private func setupUI() {
         
         animalImage.layer.cornerRadius = 8
