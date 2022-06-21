@@ -11,12 +11,12 @@ class AnimalsViewModel {
     
     //MARK: Properties
 
-    var itens: Animal?
+    var animals: Animal?
     var notificacao: ( () -> Void)?
 
     // MARK: Services
 
-    func getInformacoes() {
+    func getAnimals() {
 
 
         guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/animals") else { return }
@@ -31,7 +31,7 @@ class AnimalsViewModel {
             guard let data = data else { return }
             do {
                 let animais = try JSONDecoder().decode(Animal.self, from: data)
-                self.itens = animais
+                self.animals = animais
             } catch {
                 print(error.localizedDescription)
             }
@@ -40,7 +40,7 @@ class AnimalsViewModel {
                 
             }
             
-            print (itens)
+            print (animals)
             
         }.resume()
         
