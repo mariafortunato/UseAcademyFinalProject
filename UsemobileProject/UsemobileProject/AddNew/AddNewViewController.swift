@@ -69,8 +69,8 @@ class AddNewViewController: UIViewController {
     }
     
     @IBAction func buttonAdd(_ sender: Any) {
-        getAnimals()
-        postAnimals(name: "testinho", image: "testinho", description: "testinho", species: "testinho", age: "testinho")
+        // getAnimals()
+        postAnimals(name: textFieldName.text!, image: textFieldLink.text!, description: textFieldDescription.text!, species: textFieldSpecies.text!, age: textFieldAge.text!)
     }
     
     private func getAnimals() {
@@ -117,8 +117,8 @@ class AddNewViewController: UIViewController {
         }.resume()
     }
     
-    // teste
-    // teste2
-    // teste3
+    private func clearForm() {
+        
+    }
     
 }
