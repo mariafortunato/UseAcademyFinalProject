@@ -24,17 +24,4 @@ struct Items: Decodable{
     var created_at: String?
     var updated_at: String?
     
-    init(){ }
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case name = "name"
-        case description = "description"
-        case age = "age"
-        case species = "species"
-        case image = "image"
-        case created_at = "crested_at"
-        case updated_at = "updated_at"
-    
-}
 }
