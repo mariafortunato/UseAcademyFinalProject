@@ -9,7 +9,6 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
     
-    var colorBlue: UIColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
     
     private let favoritesTableViewCell = "FavoritesTableViewCell"
 
@@ -21,15 +20,14 @@ class FavoritesViewController: UIViewController {
         configuraTableView()
     }
     override func viewWillAppear(_ animated: Bool) {
-        
-        navigationItem.title = "Favoritos"
-        navigationController?.navigationBar.tintColor = colorBlue
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: colorBlue]
+        navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
+        navigationController?.navigationBar.topItem?.title = "Favoritos"
 
     }
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationItem.title = ""
+
+        navigationController?.navigationBar.topItem?.title = ""
     }
     
     private func configuraTableView() {
@@ -48,16 +46,8 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: favoritesTableViewCell, for: indexPath)
-        
-        cell.textLabel?.text = ""
-        
+
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("testando Git")
-    }
-    
-    
-}
 
+}
