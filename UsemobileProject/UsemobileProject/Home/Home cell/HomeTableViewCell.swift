@@ -9,6 +9,8 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
+    var filmesFavoritos: [String] = []
+    
 
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -21,13 +23,15 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
+        
         super.setSelected(selected, animated: animated)
 
        
     }
     
-    @IBAction func favoriteButton(_ sender: Any) {
+    @IBAction func favoriteButton(_ sender: Any){
         buttonStarColor()
+        
     }
     
     private func buttonStarColor() {
@@ -49,5 +53,15 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     
+//    private func userDefaults() {
+//    //        UserDefaults.standard.setValue("Essa é uma aula do bootcamp", forKey: "frase")
+//    //        // procurar com esse id
+//    //        guard let frase = UserDefaults.standard.string(forKey: "frase") else {return}
+//
+//            let dev = Developer1(name: "Valeria", age: 18)
+//
+//            UserDefaults.standard.set(1, forKey: "developerDefaults")
+//
+//        }
     
 }

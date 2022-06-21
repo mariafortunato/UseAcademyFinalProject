@@ -37,6 +37,17 @@ class HomeViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+            navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
+            navigationController?.navigationBar.topItem?.title = "Favoritos"
+
+        }
+        override func viewWillDisappear(_ animated: Bool) {
+
+            navigationController?.navigationBar.topItem?.title = ""
+        }
+    
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
@@ -51,15 +62,17 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        print("linha: \([indexPath.row])")
-    }
-    
+            let details = DetailsViewController()
+
+            navigationController?.pushViewController(details, animated: true)
+        }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
         
-        return  animalsViewModel.itens?.items.count ?? 0
+        return  animalsViewModel.itens?.items.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
