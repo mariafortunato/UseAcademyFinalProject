@@ -32,8 +32,7 @@ class FavoritesViewController: UIViewController {
         
         navigationController?.navigationBar.topItem?.title = ""
     }
-    
-    
+
     private func configuraTableView() {
         favoriteTableView?.dataSource = self
         favoriteTableView?.delegate = self
@@ -41,8 +40,7 @@ class FavoritesViewController: UIViewController {
         favoriteTableView?.register(UINib(nibName: favoritesTableViewCell, bundle: nil), forCellReuseIdentifier: favoritesTableViewCell)
         
     }
-    
-    
+
     func loadFavorites() {
         favoritesArray = userDefaults.value(forKey: "favoritesArray") as? [[String: Any]] ?? [[:]]
     }
@@ -51,6 +49,7 @@ class FavoritesViewController: UIViewController {
 extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return favoritesArray.count
     }
     
@@ -60,8 +59,8 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.titleLabel?.text = favoritesArray[indexPath.row]["name"] as? String
         cell.descriptionLabel.text = favoritesArray[indexPath.row]["description"] as? String
-        cell.loadImage(image: favoritesArray[indexPath.row]["image"] as? String ?? "fotoBranca")
-        
+        cell.loadImage(image: favoritesArray[indexPath.row]["image"] as? String ?? "arara")
+   
         return cell
     }
     
