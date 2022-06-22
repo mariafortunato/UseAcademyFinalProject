@@ -58,7 +58,7 @@ class HomeTableViewCell: UITableViewCell {
 
         guard let imageNoColor: UIImage = UIImage(named: "Vector-2") else { return }
         
-        favoriteButton.setImage(imageNoColor, for: .disabled)
+        favoriteButton.setImage(imageNoColor, for: .normal)
         isFavorited = false
     }
     
