@@ -9,7 +9,6 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
-//    var filmesFavoritos: [String] = []   Gisele
     
     var isFavorited: Bool = false
     
@@ -32,7 +31,6 @@ class HomeTableViewCell: UITableViewCell {
         
         super.setSelected(selected, animated: animated)
 
-       
     }
     
     @IBAction func favoriteButton(_ sender: Any){
@@ -45,15 +43,7 @@ class HomeTableViewCell: UITableViewCell {
             buttonStarColor()
             saveFavorites()
         }
-        
-        //Giselle
-//        if filmesFavoritos.contains(nameLabel.text ?? "") {
-//            Desfavoritar()
-//        } else {
-//            favoritar()
-//        }
-        
-        
+ 
     }
     private func buttonStarColor() {
 
@@ -90,27 +80,5 @@ class HomeTableViewCell: UITableViewCell {
         guard let url = URL(string: items.image ?? "fotoBranca") else { return }
         animalImage.loadImage(url: url)
     }
-    
-    //Gisele
-//    private func Desfavoritar() {
-//
-//        guard let imageNoColor: UIImage = UIImage(named: "Vector-2"), let nome = nameLabel.text,let indice = filmesFavoritos.firstIndex(of: nome)  else { return }
-//
-//        favoriteButton.setImage(imageNoColor, for: .normal)
-//        filmesFavoritos.remove(at: indice)
-//        print("Linha tirada de favoritos")
-//
-//    }
-//
-//    private func favoritar() {
-//
-//        guard let imageNoColor: UIImage = UIImage(named: "Vector"), let nome = nameLabel.text else { return }
-//
-//        favoriteButton.setImage(imageNoColor, for: .normal)
-//
-//        filmesFavoritos.append(nome)
-//        print("favoritado!")
-//    }
-    
- 
+
 }

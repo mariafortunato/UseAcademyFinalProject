@@ -26,6 +26,8 @@ class FavoritesViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
         navigationController?.navigationBar.topItem?.title = "Favorites"
         
+        favoriteTableView?.reloadData()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
