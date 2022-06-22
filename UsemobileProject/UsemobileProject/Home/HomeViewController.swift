@@ -10,8 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var animalsViewModel = AnimalsViewModel()
-    
-    
+
     @IBOutlet weak var homeTableView: UITableView!
     
     
@@ -22,7 +21,7 @@ class HomeViewController: UIViewController {
         bindEvents()
         
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
@@ -44,15 +43,19 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        homeTableView.showsVerticalScrollIndicator = false // a barra lateral
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
-        homeTableView.isScrollEnabled = false
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let details = DetailsViewController(nameAnimal: animalsViewModel.animals?.items[indexPath.row]?.name ?? "", ageAnimal: animalsViewModel.animals?.items[indexPath.row]?.age ?? 0, descriptions: animalsViewModel.animals?.items[indexPath.row]?.description ?? "", specie: animalsViewModel.animals?.items[indexPath.row]?.species ?? "")
+        let details = DetailsViewController(nameAnimal: animalsViewModel.animals?.items[indexPath.row]?.name ?? "" ,
+                                            descriptions: animalsViewModel.animals?.items[indexPath.row]?.description ?? "",
+                                            specie: animalsViewModel.animals?.items[indexPath.row]?.species ?? "",
+                                            image: animalsViewModel.animals?.items[indexPath.row]?.image ?? "")
         
-        let details = DetailsViewController()
+        
         
         navigationController?.pushViewController(details, animated: true)
     }
@@ -60,8 +63,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        
-        
+    
         return  animalsViewModel.animals?.items.count ?? 1
     }
     

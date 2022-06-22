@@ -13,6 +13,7 @@
 		4C21B5AE285E805800364D86 /* AnimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C21B5AD285E805800364D86 /* AnimalsViewModel.swift */; };
 		4C21B5B2285E809000364D86 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C21B5B0285E809000364D86 /* HomeTableViewCell.swift */; };
 		4C21B5B3285E809000364D86 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C21B5B1285E809000364D86 /* HomeTableViewCell.xib */; };
+		4C4CC2BD2862BC0D00896DB7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4CC2BC2862BC0D00896DB7 /* Extensions.swift */; };
 		4CBC37B6285D61920072AA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC37B5285D61920072AA6C /* AppDelegate.swift */; };
 		4CBC37BF285D61930072AA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37BE285D61930072AA6C /* Assets.xcassets */; };
 		4CBC37C2285D61930072AA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 		4C21B5AD285E805800364D86 /* AnimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewModel.swift; sourceTree = "<group>"; };
 		4C21B5B0285E809000364D86 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		4C21B5B1285E809000364D86 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		4C4CC2BC2862BC0D00896DB7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4CBC37B2285D61920072AA6C /* UsemobileProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsemobileProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBC37B5285D61920072AA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBC37BE285D61930072AA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				4CBC37BE285D61930072AA6C /* Assets.xcassets */,
 				4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */,
 				4CBC37C3285D61930072AA6C /* Info.plist */,
+				4C4CC2BC2862BC0D00896DB7 /* Extensions.swift */,
 			);
 			path = UsemobileProject;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				4C21B5B2285E809000364D86 /* HomeTableViewCell.swift in Sources */,
 				4C21B5AE285E805800364D86 /* AnimalsViewModel.swift in Sources */,
 				4CFB29B5285E227B004E69FB /* TabBarViewController.swift in Sources */,
+				4C4CC2BD2862BC0D00896DB7 /* Extensions.swift in Sources */,
 				4CF2AC01285E54E50004D3FF /* FavoritesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
