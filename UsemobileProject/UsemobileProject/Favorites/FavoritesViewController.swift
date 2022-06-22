@@ -8,40 +8,62 @@
 import UIKit
 
 class FavoritesViewController: UIViewController {
-
+    
+    private let userDefaults = UserDefaults.standard
+    var favoritesArray: [[String: Any]] = [[:]]
+    private let favoritesTableViewCell = "FavoritesTableViewCell"
+    
+    @IBOutlet weak var favoriteTableView: UITableView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadFavorites()
+        configuraTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
+        navigationController?.navigationBar.topItem?.title = "Favorites"
+        
+        favoriteTableView?.reloadData()
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        navigationController?.navigationBar.topItem?.title = ""
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configuraTableView() {
+        favoriteTableView?.dataSource = self
+        favoriteTableView?.delegate = self
+        favoriteTableView?.showsVerticalScrollIndicator = false // a barra lateral
+        favoriteTableView?.register(UINib(nibName: favoritesTableViewCell, bundle: nil), forCellReuseIdentifier: favoritesTableViewCell)
+        
     }
-    */
 
+    func loadFavorites() {
+        favoritesArray = userDefaults.value(forKey: "favoritesArray") as? [[String: Any]] ?? [[:]]
+    }
 }
 
-extension FavoritesViewController: UITableViewDataSource {
+extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        return favoritesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
         
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: favoritesTableViewCell, for: indexPath) as? FavoritesTableViewCell else { return UITableViewCell() }
+        
+        cell.titleLabel?.text = favoritesArray[indexPath.row]["name"] as? String
+        cell.descriptionLabel.text = favoritesArray[indexPath.row]["description"] as? String
+        cell.loadImage(image: favoritesArray[indexPath.row]["image"] as? String ?? "arara")
+   
         return cell
     }
-    
-    
-}
-
-extension FavoritesViewController: UITableViewDelegate {
     
 }
