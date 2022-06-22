@@ -77,6 +77,8 @@ class AddNewViewController: UIViewController {
     @IBAction func buttonAdd(_ sender: Any) {
         let model = AnimalsViewModel()
         model.postAnimals(name: textFieldName.text!, image: textFieldLink.text!, description: textFieldDescription.text!, species: textFieldSpecies.text!, age: Int(textFieldAge.text!) ?? 0)
+        clearForm()
+        disableAddButton()
     }
     
 
@@ -121,23 +123,13 @@ class AddNewViewController: UIViewController {
         buttonAdd.isUserInteractionEnabled = false
         buttonAdd.backgroundColor = UIColor.gray
     }
-
     
-    private func getAnimals() {
-        
-        guard let url = URL(string: "https://bootcamp-ios-api.herokuapp.com/api/v1/") else { return }
-        let request = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let response = response as? HTTPURLResponse {
-                print("Status Code: ", response.statusCode)
-            }
-            
-            
-            
-        }.resume()
-        
+    func clearForm() {
+        textFieldName.text = ""
+        textFieldLink.text = ""
+        textFieldDescription.text = ""
+        textFieldAge.text = ""
+        textFieldSpecies.text = ""
     }
-    
     
 }
