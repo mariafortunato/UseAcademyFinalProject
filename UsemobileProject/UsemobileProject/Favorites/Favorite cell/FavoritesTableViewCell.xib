@@ -80,7 +80,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="animalImage" destination="FkS-sW-6kt" id="cb2-se-oG9"/>
+                <outlet property="animalImage" destination="FkS-sW-6kt" id="d4E-dn-1Pv"/>
                 <outlet property="descriptionLabel" destination="vtH-bP-Xlm" id="x20-NX-l4T"/>
                 <outlet property="starButtonOutlet" destination="lBI-X1-WNz" id="VNW-V1-AT5"/>
                 <outlet property="titleLabel" destination="5Yg-Gc-qZu" id="I9c-hW-ga9"/>

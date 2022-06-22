@@ -26,12 +26,11 @@ class FavoritesTableViewCell: UITableViewCell {
 
         if isFavorited {
             buttonStarNoColor()
-            //saveFavorites()
-            
         } else {
             buttonStarColor()
         }
     }
+    
     private func buttonStarColor() {
         
         guard let imageColor: UIImage = UIImage(named: "Vector") else { return }
@@ -40,6 +39,7 @@ class FavoritesTableViewCell: UITableViewCell {
         isFavorited = true
         
     }
+    
     private func buttonStarNoColor() {
 
         guard let imageNoColor: UIImage = UIImage(named: "Vector-2") else { return }
@@ -53,13 +53,12 @@ class FavoritesTableViewCell: UITableViewCell {
         titleLabel.text = items.name
         descriptionLabel.text = items.description
         
-//        guard let url = URL(string: items.image ?? "fotoBranca") else { return }
-//        animalImage.loadImage(url: url)
-        
     }
+    
     func loadImage(image: String) {
-        guard let url = URL(string: image ?? "arara") else { return }
-        animalImage.loadImage(url: url) 
+        
+        guard let url = URL(string: image) else { return }
+        animalImage.loadImage(url: url)
     }
     
     private func setupUI() {

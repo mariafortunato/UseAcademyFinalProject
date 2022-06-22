@@ -78,11 +78,10 @@ class HomeTableViewCell: UITableViewCell {
         favoritesDict = ["name": name, "description": description, "image": imageString]
         favoritesArray.append(favoritesDict)
         userDefaults.set(favoritesArray, forKey: "favoritesArray")
-        print(userDefaults.value(forKey: "favoritesArray"))
     }
    
     func setupUI(items: Items) {
-        
+        imageString = items.image ?? ""
         animalImage.layer.cornerRadius = 8
         
         nameLabel.text = items.name
