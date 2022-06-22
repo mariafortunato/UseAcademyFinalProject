@@ -15,7 +15,7 @@ class HomeTableViewCell: UITableViewCell {
     
     private let userDefaults = UserDefaults.standard
     private var favoritesDict: [String: Any] = [:]
-    private var favoritesArray: [Any] = []
+    var favoritesArray: [Any] = []
     private var imageString: String = ""
 
     @IBOutlet weak var favoriteButton: UIButton!
@@ -113,16 +113,5 @@ class HomeTableViewCell: UITableViewCell {
 //        print("favoritado!")
 //    }
     
-    
-//    private func userDefaults() {
-//    //        UserDefaults.standard.setValue("Essa é uma aula do bootcamp", forKey: "frase")
-//    //        // procurar com esse id
-//    //        guard let frase = UserDefaults.standard.string(forKey: "frase") else {return}
-//
-//            let dev = Developer1(name: "Valeria", age: 18)
-//
-//            UserDefaults.standard.set(1, forKey: "developerDefaults")
-//
-//        }
-    
+ 
 }
