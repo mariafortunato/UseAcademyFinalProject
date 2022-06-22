@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var animalsViewModel = AnimalsViewModel()
+    var service = HomeTableViewCell()
 
     @IBOutlet weak var homeTableView: UITableView!
     
@@ -19,8 +20,10 @@ class HomeViewController: UIViewController {
         animalsViewModel.getAnimals()
         configuraTableView()
         bindEvents()
+       
         
     }
+    
 
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
