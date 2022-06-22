@@ -44,15 +44,19 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        homeTableView.showsVerticalScrollIndicator = false // a barra lateral
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
-        homeTableView.isScrollEnabled = false
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let details = DetailsViewController(nameAnimal: animalsViewModel.animals?.items[indexPath.row]?.name ?? "", ageAnimal: animalsViewModel.animals?.items[indexPath.row]?.age ?? 0, descriptions: animalsViewModel.animals?.items[indexPath.row]?.description ?? "", specie: animalsViewModel.animals?.items[indexPath.row]?.species ?? "")
+        let details = DetailsViewController(nameAnimal: animalsViewModel.animals?.items[indexPath.row]?.name ?? "" ,
+                                            descriptions: animalsViewModel.animals?.items[indexPath.row]?.description ?? "",
+                                            specie: animalsViewModel.animals?.items[indexPath.row]?.species ?? "",
+                                            image: animalsViewModel.animals?.items[indexPath.row]?.image ?? "")
         
-        let details = DetailsViewController()
+        
         
         navigationController?.pushViewController(details, animated: true)
     }

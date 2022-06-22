@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNT-1T-QeC">
                         <rect key="frame" x="16" y="8" width="343" height="65"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arara" translatesAutoresizingMaskIntoConstraints="NO" id="MCy-9i-SZc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoBranca" translatesAutoresizingMaskIntoConstraints="NO" id="MCy-9i-SZc">
                                 <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="QBC-nb-SsA"/>
@@ -97,6 +97,6 @@
     </objects>
     <resources>
         <image name="Vector-2" width="23" height="22"/>
-        <image name="arara" width="830" height="500"/>
+        <image name="fotoBranca" width="1920" height="1080"/>
     </resources>
 </document>

@@ -16,28 +16,31 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var specieLabel: UILabel!
     @IBOutlet weak var descriptionsLabel: UILabel!
     
-//    let nameAnimal: String
+    let nameAnimal: String?
 //    let ageAnimal: Int
-//    let descriptions: String
-//    let specie: String
-//    
-//    init(nameAnimal: String, ageAnimal: Int, descriptions: String, specie: String) {
-//        self.nameAnimal = nameAnimal
+    let descriptions: String?
+    let specie: String?
+    let image: String?
+    
+    init(nameAnimal: String, descriptions: String, specie: String, image: String) {
+        self.nameAnimal = nameAnimal
 //        self.ageAnimal = ageAnimal
-//        self.descriptions = descriptions
-//        self.specie = specie
-//        super.init(nibName: nil, bundle: nil)
-//    }
-//    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+        self.descriptions = descriptions
+        self.specie = specie
+        self.image = image
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+        fullInfos()
     
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +50,16 @@ class DetailsViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         navigationItem.title = ""
+    }
+    private func fullInfos() {
+        
+        titleLabel.text =  nameAnimal
+        specieLabel.text = specie
+        descriptionsLabel.text = descriptions
+        
+        guard let url = URL(string: image ?? "arara") else { return }
+        imageAnimal.loadImage(url: url)
+    
     }
     
     private func setupUI() {

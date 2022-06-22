@@ -29,14 +29,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx5-Rt-HLF">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arara" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-gj-YYF">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoBranca" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-gj-YYF">
                                     <rect key="frame" x="93.5" y="20" width="227" height="227"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="227" id="cyh-Cm-f41"/>
                                     </constraints>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PBq-yr-0Ry">
-                                    <rect key="frame" x="24" y="287" width="366" height="413"/>
+                                    <rect key="frame" x="24" y="287" width="366" height="263"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0L-Cz-DRy">
                                             <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
@@ -57,8 +57,8 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYU-CM-0LH">
-                                            <rect key="frame" x="0.0" y="100" width="366" height="313"/>
-                                            <mutableString key="text">testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho</mutableString>
+                                            <rect key="frame" x="0.0" y="100" width="366" height="163"/>
+                                            <string key="text">testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho.....testinho...testinho....testinho.....testinho...testinho</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -71,7 +71,7 @@
                                 <constraint firstAttribute="height" constant="800" id="1QR-c1-sL4"/>
                                 <constraint firstItem="PBq-yr-0Ry" firstAttribute="top" secondItem="9yV-gj-YYF" secondAttribute="bottom" constant="40" id="1gR-62-jm1"/>
                                 <constraint firstItem="9yV-gj-YYF" firstAttribute="top" secondItem="kx5-Rt-HLF" secondAttribute="top" constant="20" id="6ky-Kb-ZAZ"/>
-                                <constraint firstAttribute="bottom" secondItem="PBq-yr-0Ry" secondAttribute="bottom" constant="100" id="Kui-lt-A7F"/>
+                                <constraint firstAttribute="bottom" secondItem="PBq-yr-0Ry" secondAttribute="bottom" constant="250" id="Kui-lt-A7F"/>
                                 <constraint firstItem="9yV-gj-YYF" firstAttribute="leading" secondItem="kx5-Rt-HLF" secondAttribute="leading" constant="93.5" id="Tpl-CI-u4A"/>
                                 <constraint firstAttribute="trailing" secondItem="9yV-gj-YYF" secondAttribute="trailing" constant="93.5" id="hpY-wd-P59"/>
                                 <constraint firstAttribute="trailing" secondItem="PBq-yr-0Ry" secondAttribute="trailing" constant="24" id="vbP-kx-NTn"/>
@@ -100,7 +100,7 @@
         </view>
     </objects>
     <resources>
-        <image name="arara" width="830" height="500"/>
+        <image name="fotoBranca" width="1920" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
