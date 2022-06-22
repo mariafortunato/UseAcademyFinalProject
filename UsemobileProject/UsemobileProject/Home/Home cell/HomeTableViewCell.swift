@@ -30,16 +30,33 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     @IBAction func favoriteButton(_ sender: Any){
-        buttonStarColor()
+        
+        if filmesFavoritos.contains(nameLabel.text ?? "") {
+            Desfavoritar()
+        } else {
+            favoritar()
+        }
+        
         
     }
     
-    private func buttonStarColor() {
+    private func Desfavoritar() {
+        
+        guard let imageNoColor: UIImage = UIImage(named: "Vector-2"), let nome = nameLabel.text,let indice = filmesFavoritos.firstIndex(of: nome)  else { return }
+        
+        favoriteButton.setImage(imageNoColor, for: .normal)
+        filmesFavoritos.remove(at: indice)
+        print("Linha tirada de favoritos")
+        
+    }
+    
+    private func favoritar() {
 
-        guard let imageNoColor: UIImage = UIImage(named: "Vector") else { return }
+        guard let imageNoColor: UIImage = UIImage(named: "Vector"), let nome = nameLabel.text else { return }
         
         favoriteButton.setImage(imageNoColor, for: .normal)
         
+        filmesFavoritos.append(nome)
         print("favoritado!")
     }
     
