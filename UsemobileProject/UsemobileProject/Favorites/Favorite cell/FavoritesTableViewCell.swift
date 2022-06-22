@@ -8,6 +8,7 @@
 import UIKit
 
 class FavoritesTableViewCell: UITableViewCell {
+    
     var isFavorited: Bool = false
     
     @IBOutlet weak var animalImage: UIImageView!
@@ -22,8 +23,7 @@ class FavoritesTableViewCell: UITableViewCell {
     }
     
     @IBAction func starButtonAction(_ sender: Any) {
-        
-        
+
         if isFavorited {
             buttonStarNoColor()
             //saveFavorites()
@@ -38,6 +38,7 @@ class FavoritesTableViewCell: UITableViewCell {
         
         starButtonOutlet.setImage(imageColor, for: .normal)
         isFavorited = true
+        
     }
     private func buttonStarNoColor() {
 
@@ -52,13 +53,13 @@ class FavoritesTableViewCell: UITableViewCell {
         titleLabel.text = items.name
         descriptionLabel.text = items.description
         
-        guard let url = URL(string: items.image ?? "fotoBranca") else { return }
-        animalImage.loadImage(url: url)
+//        guard let url = URL(string: items.image ?? "fotoBranca") else { return }
+//        animalImage.loadImage(url: url)
         
     }
     func loadImage(image: String) {
-        guard let url = URL(string: image) else { return }
-        animalImage.loadImage(url: url)
+        guard let url = URL(string: image ?? "arara") else { return }
+        animalImage.loadImage(url: url) 
     }
     
     private func setupUI() {

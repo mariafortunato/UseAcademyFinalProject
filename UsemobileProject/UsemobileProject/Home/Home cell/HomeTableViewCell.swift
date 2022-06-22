@@ -40,6 +40,7 @@ class HomeTableViewCell: UITableViewCell {
         if isFavorited {
             buttonStarNoColor()
             
+            
         } else {
             buttonStarColor()
             saveFavorites()
@@ -60,13 +61,14 @@ class HomeTableViewCell: UITableViewCell {
         
         favoriteButton.setImage(imageColor, for: .normal)
         isFavorited = true
+        
     }
     
     private func buttonStarNoColor() {
 
         guard let imageNoColor: UIImage = UIImage(named: "Vector-2") else { return }
         
-        favoriteButton.setImage(imageNoColor, for: .normal)
+        favoriteButton.setImage(imageNoColor, for: .disabled)
         isFavorited = false
     }
     

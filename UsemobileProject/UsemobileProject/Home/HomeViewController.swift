@@ -10,8 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var animalsViewModel = AnimalsViewModel()
-    
-    
+
     @IBOutlet weak var homeTableView: UITableView!
     
     
@@ -22,7 +21,7 @@ class HomeViewController: UIViewController {
         bindEvents()
         
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.tintColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)]
@@ -64,8 +63,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        
-        
+    
         return  animalsViewModel.animals?.items.count ?? 1
     }
     
