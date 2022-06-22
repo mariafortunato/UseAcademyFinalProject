@@ -118,6 +118,7 @@
 		4CBC37B4285D61920072AA6C /* UsemobileProject */ = {
 			isa = PBXGroup;
 			children = (
+				4CBF600E2863887800071276 /* Extensions */,
 				4C21B5A8285E800500364D86 /* Model */,
 				4C21B5AB285E803500364D86 /* ViewModel */,
 				4CFB29B2285E225D004E69FB /* TabBar */,
@@ -129,7 +130,6 @@
 				4CBC37BE285D61930072AA6C /* Assets.xcassets */,
 				4CBC37C0285D61930072AA6C /* LaunchScreen.storyboard */,
 				4CBC37C3285D61930072AA6C /* Info.plist */,
-				4C4CC2BC2862BC0D00896DB7 /* Extensions.swift */,
 			);
 			path = UsemobileProject;
 			sourceTree = "<group>";
@@ -161,6 +161,14 @@
 				4CBC37D5285D75C10072AA6C /* AddNewViewController.xib */,
 			);
 			path = AddNew;
+			sourceTree = "<group>";
+		};
+		4CBF600E2863887800071276 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C4CC2BC2862BC0D00896DB7 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4CF2ABFE285E54D10004D3FF /* Favorite cell */ = {

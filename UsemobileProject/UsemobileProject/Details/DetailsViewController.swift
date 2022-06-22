@@ -12,19 +12,18 @@ class DetailsViewController: UIViewController {
     var colorBlue: UIColor = UIColor(red: 0.27, green: 0.733, blue: 0.938, alpha: 1)
     
     @IBOutlet weak var imageAnimal: UIImageView!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var specieLabel: UILabel!
     @IBOutlet weak var descriptionsLabel: UILabel!
     
-    let nameAnimal: String?
-//    let ageAnimal: Int
-    let descriptions: String?
-    let specie: String?
-    let image: String?
+    let nameAnimal: String
+    let descriptions: String
+    let specie: String
+    let image: String
     
     init(nameAnimal: String, descriptions: String, specie: String, image: String) {
         self.nameAnimal = nameAnimal
-//        self.ageAnimal = ageAnimal
         self.descriptions = descriptions
         self.specie = specie
         self.image = image
@@ -53,9 +52,10 @@ class DetailsViewController: UIViewController {
     }
     private func fullInfos() {
         
-        titleLabel.text =  nameAnimal
+        titleLabel.text = nameAnimal
         specieLabel.text = specie
         descriptionsLabel.text = descriptions
+        
         
         guard let url = URL(string: image ?? "arara") else { return }
         imageAnimal.loadImage(url: url)
